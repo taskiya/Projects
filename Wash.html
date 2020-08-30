@@ -1,0 +1,180 @@
+<?php 
+  session_start(); 
+
+  if (isset($_SESSION['username']));
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: signup.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: signup.php");
+  }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <title>Vehicle Wash</title>
+<!--Boostrap css-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!--Bootsrap javascript-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--Bootsrap Jquery-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!--Fontawesome for icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<!--google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab|Source+Sans+Pro" rel="stylesheet">
+
+<!---CSS-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body data-target="#navbarResponsive">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#index.php">Vehicle Wash</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#center">Nearby Cities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active " href="login.php">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+<!--Image Slider-->
+   <div id="myslider" class="carousel slide" data-ride="carousel" data-interval="7000">
+       <ol class="carousel-indicators">
+           <li data-target="#myslider" data-slide-to="0" class="active"></li>
+           <li data-target="#myslider" data-slide-to="1"></li>
+           <li data-target="#myslider" data-slide-to="2"></li>
+       </ol>
+
+       <div class="carousel-inner">
+           <!--Slide 1-->
+           <div class="carousel-item active">
+           <img src="img1/26.jpg" class="d-block w-100"  alt="1">
+              <div class="carousel-caption text-center">
+              <h1 class="text-center">Welcome <strong><?php echo $_SESSION['username']; ?></strong> </h1>
+                  <h3 class="display-2">Find wash centers with affordable price </h3>
+                  <a href="#about" class="btn btn-outline-light btn-lg">Find Now</a>
+               </div>
+          </div>
+    
+          <!--Slide 2-->
+           <div class="carousel-item">
+           <img src="img1/red_340.jpg" class="d-block w-100"  alt="2">
+           </div>
+
+           <!--Slide 3-->
+           <div class="carousel-item">
+           <img src="img1/1340.jpg" class="d-block w-100"  alt="3">
+           </div>
+
+<!--End image slider-->
+
+<!--Prev & next buttons-->
+     <a class="carousel-control-prev" href="#myslider" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     </a>
+
+     <a class="carousel-control-next" href="#myslider" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     </a>
+   </div>
+<!--End Image slider-->
+    </div>
+<!--End Home-->
+
+<br>
+<!--Start About section-->
+<section class="bg-light bl" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8s mx-auto text-center">
+            <p class="section-heading text-dark">
+            Booking vehicle wash service is now easy with vehicle wash booking websites. 
+            Vehicle Wash Booking website can easily make online reservations. 
+            It will help you to enhance customer service and manage car wash business online. 
+            These websites are built to reach people who do not want to walk into an outlet without a prior appointment. Online vehicle wash booking website provides a platform to book a vehicle wash service easily, keeping long queues and waits out of the picture. This website allows users to check the type of vehicle they own and the service they want to avail according to the requirement. A date will be booked in the name of the user,
+             the user simply visits the service station on the specific date/time. 
+            </p>
+            <hr class="light my-4">
+            <p class="text-faded mb-4"> </p>
+            <p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--close about section-->
+
+<section id="center" class="centers">
+    <h1>Nearby City</h1>
+    <div class="container">
+        <div class="btn1">
+    <button type="button" class="btn btn-success btn-lg"><a href="pan/panaji.html">Panaji</a></button>
+  </div>
+</section>
+
+       <br>
+       <br>
+
+<section class="sec">
+       <div id="footer-artwork">
+       </div>
+      
+            <div class="footer">
+              <p>Copyright © 2019-2025 Vehicle Wash</p>
+              </div>
+       </section>
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!--Javascript codes-->
+
+<!-- Top button-->
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<!--close top button-->
+
+</body>
+</html>
