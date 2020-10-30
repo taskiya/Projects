@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+   <title>SECW</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/ex.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script type="text/javascript">
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop()){
+      $('nav').addClass('black');
+    }
+    else {
+      $('nav').removeClass('black');
+    }
+  })
+  </script>
+</head>
+<body>
+  <header class="head">
+      <nav class="navbar navbar-style">
+       <div class="container">
+           <div class="navbar-header">
+               <h1 class="logo">SECW</h1>
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="micon">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+           </div>
+           <div class="collapse navbar-collapse" id="micon">
+           <ul class="nav navbar-nav navbar-right">
+               <li><a href="#gallery">Gallery</a></li>
+               <li><a href="manager/views.php">Services</a></li>
+               <li><a href="#wash">Book Wash</a></li>
+               <li><a href="manager/login.php">Manager</a></li>
+               
+           </ul>
+           </div>
+        </div>
+       </nav>
+    <div class="hero">
+        <h1>Welcome to Super Easy Car Wash</h1>
+        <p>Now book your wash at anytime, anywhere with affordable price.</p>
+    </div>
+  </header>
+
+
+   <!--galary section-->
+   <section class="pb-3" id="gallery">
+
+    <!--Section heading-->
+    <h1 class="hello">Our Gallery</h1>
+ <!-- Grid row -->
+ <div class="container gal-container">
+  <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#1">
+        <img src="img3/image.jpg">
+      </a>
+      <div class="modal fade" id="1" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img3/image.jpg">
+            </div>
+              <div class="col-md-12 description">
+                <h4>This is the first one on my Gallery</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#2">
+        <img src="img3/2.jpg">
+      </a>
+      <div class="modal fade" id="2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img3/2.jpg">
+            </div>
+              <div class="col-md-12 description">
+                <h4>This is the second one on my Gallery</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#3">
+        <img src="img3/7.jpg">
+      </a>
+      <div class="modal fade" id="3" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img3/7.jpg">
+            </div>
+              <div class="col-md-12 description">
+                <h4>This is the third one on my Gallery</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#4">
+        <img src="img3/4.jpg">
+      </a>
+      <div class="modal fade" id="4" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img3/4.jpg">
+            </div>
+              <div class="col-md-12 description">
+                <h4>This is the fourth one on my Gallery</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#5">
+        <img src="img3/500.jpg">
+      </a>
+      <div class="modal fade" id="5" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img3/500.jpg">
+            </div>
+              <div class="col-md-12 description">
+                <h4>This is the fifth one on my Gallery</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+        <!--end gallery-->
+
+
+<div class="wrapper" id="wash">
+  <h1 class="h">Book Wash For</h1>
+  <div class="sub">
+  <div class="row">
+    <div class="col-lg-8">
+        <a href="tbook.php"><button class="btn btn-outline-primary btn-lg">Two Wheeler</button></a>
+       <a href="fbook.php"><button class="btn btn-outline-primary btn-lg">Four Wheeler</button></a>
+        </div>
+</div>
+</div>
+
+<button class="btn btn-outline-dark btn-md" onclick="history.back()">Back</button>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+<!-- Top button-->
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
+  <!--close top button-->
+  
+        <script>
+       $(function() {
+var selectedClass = "";
+$(".filter").click(function(){
+selectedClass = $(this).attr("data-rel");
+$("#gallery").fadeTo(100, 0.1);
+$("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+setTimeout(function() {
+$("."+selectedClass).fadeIn().addClass('animation');
+$("#gallery").fadeTo(300, 1);
+}, 300);
+});
+});
+       </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    line-height: 1em;
+    background-color: rgba(58, 55, 55, 0.452);
+}
+
+nav *{
+    display: inline;
+}
+
+nav ul{
+    padding-top: 25px;
+}
+
+nav li{
+    margin-left: 16px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+}
+
+.sec{
+    width: 100%;
+    height: 100vh;
+    background-image: url("2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.col-md-8{
+    padding: 70px 30px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 5px;
+}
