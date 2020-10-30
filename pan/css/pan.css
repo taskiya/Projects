@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro', serif;
+}
+
+/*--center section--*/
+.cardsec
+{
+    margin-top: 50px;
+ 
+}
+
+.cardsec h1
+{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 50px;
+    color:  rgba(19, 18, 18, 0.945);
+    text-transform: uppercase;
+}
+
+.cardsec h1:after {
+    width: 107px;
+    height: 4px;
+    background-color: rgb(206, 141, 44);
+    display: block;
+    content: "";
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+.card-body h3
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-body h5
+{
+    font-size: 20px;
+}
+
+.card-body p
+{
+    font-size: 20px;
+}
+
+.btn-ss:hover,
+.btn-ss:focus{
+    background-color: rgba(172, 127, 73, 0.671);
+    border-color: rgba(172, 127, 73, 0.671);
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-ss {
+    color: #fff;
+    background-color: rgb(177, 157, 45);
+    border-color: rgb(177, 157, 45);
+}
+/*--close center section--*/
+
+.btn-md{
+    color: white;
+    background-color: rgb(204, 162, 25);
+    font-size: 20px;
+    float: left;
+    padding: 5px 20px;
+    margin-left: 77px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-md:hover,
+.btn-md:focus{
+    
+    background-color: rgb(199, 168, 33);
+    border-color: rgb(216, 190, 42);
+    box-shadow: none;
+    outline: none;
+}

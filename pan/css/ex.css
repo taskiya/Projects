@@ -1,0 +1,414 @@
+*
+{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    font-family: tahoma; 
+   
+}
+head{
+    height: 10vh;;
+}
+header
+{
+    height: 100vh;
+    background-image: url("../img3/8.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-style
+{
+    box-shadow: 0 5px 10 px #d64242;
+    text-transform: uppercase;
+    background-color: rgb(26, 25, 25);
+}
+.logo
+{
+    height: 55px;
+    width: 60px;
+    padding: 9px 10px;
+    color: white;
+}
+.icon-bar
+{
+    background: rgb(209, 203, 187);
+}
+
+#micon ul li 
+{
+    font-size: 16px;
+    padding: 18px 10px;
+}
+li a
+{
+    color: white;
+}
+.hero{
+    font-size: 23px;
+    color: antiquewhite;
+}
+.text1{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    color: #de6363;
+    font-family: 'Times New Roman';
+}
+.hero h1{
+    font-size: 70px;
+    padding-top: 150px;
+    color: whitesmoke;
+    text-align:center;
+}
+
+.hero p{
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+a.btn
+{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    float: center;
+}
+a.btn-first
+{
+    background-color:  #7b8de2;
+    color: #fff;
+    font-size: large;
+}
+
+.cardsec
+{
+    margin-top: 120px;
+    
+}
+
+.cardsec h1
+{
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 53px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+.card-body h3
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 20px;
+    color: #fff;
+
+}
+.card-body h5
+{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.card-body p
+{
+    font-size: 20px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+  }
+
+
+.card-body p {
+    margin: 40px 0 5px;
+}
+.card-body h5 {
+  font-size: 30px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 19px;
+    margin-inline-end: 0px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+li {
+    display: list-item;
+    text-align: center;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    list-style-position: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+:after, :before {
+    
+    box-sizing: border-box;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.hello{
+    font-size: 50px;
+    padding-top: 50px;
+    color: #1d0707;
+    text-align: center;
+}
+
+.hello h1:after{
+    width: 107px;
+    height: 4px;
+    background-color: rgba(109, 108, 105, 0.541);
+    display: block;
+    content: "";
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.gal-container{
+	padding: 0px;
+}
+.gal-item{
+	overflow: hidden;
+	padding: 3px;
+}
+.gal-item .box{
+	height: 350px;
+	overflow: hidden;
+}
+.box img{
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+	-o-object-fit:cover;
+}
+.gal-item a:focus{
+	outline: none;
+}
+.gal-item a:after{
+	content:"\e003";
+	font-family: 'Glyphicons Halflings';
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	right: 3px;
+	left: 3px;
+	top: 3px;
+	bottom: 3px;
+	text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.gal-item a:hover:after{
+	opacity: 1;
+}
+.modal-open .gal-container .modal{
+	background-color: rgba(0,0,0,0.4);
+}
+.modal-open .gal-item .modal-body{
+	padding: 0px;
+}
+.modal-open .gal-item button.close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+.modal-open .gal-item button.close:focus{
+	outline: none;
+}
+.modal-open .gal-item button.close span{
+	position: relative;
+	top: -3px;
+	font-weight: lighter;
+	text-shadow:none;
+}
+.gal-container .modal-dialogue{
+	width: 80%;
+}
+.gal-container .description{
+	position: relative;
+	height: 40px;
+	top: -40px;
+	padding: 10px 25px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: left;
+}
+.gal-container .description h4{
+	margin:0px;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+.gal-container .modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gal-container .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+    opacity: 1;
+}
+@media (min-width: 768px) {
+.gal-container .modal-dialog {
+    width: 55%;
+    margin: 50 auto;
+}
+}
+@media (max-width: 768px) {
+    .gal-container .modal-content{
+        height:250px;
+    }
+}
+@media (min-width: 768px)
+.col-sm-6 {
+    width: 109%;
+}
+/* Footer Style */
+i.red{
+    color:#BC0213;
+}
+.gal-container{
+    padding-top :42px;
+    padding-bottom:75px;
+}
+footer{
+    font-family: 'Quicksand', sans-serif;
+}
+footer a,footer a:hover{
+    color: #88C425;
+}
+
+/*--top button--*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(197, 20, 88); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+/*--close top button--*/
+
+
+/* wheeler section*/
+.wrapper{
+    margin: 80px 30px;
+}
+
+.h{
+    font-size: 45px;
+    color: rgb(12, 11, 9);
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+
+.h::after{
+    width: 107px;
+    height: 4px;
+    background-color: rgba(141, 133, 133, 0.726);
+    display: block;
+    content: "";
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.sub{
+    margin-left: 550px;
+    padding-top: 20px;
+}
+
+.btn-lg{
+    background-color: rgb(214, 185, 54);;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+
+/*--wheeler close--*/
+
+.btn-md{
+    color: white;
+    background-color: rgb(197, 20, 88);
+    font-size: 20px;
+    float: left;
+    padding: 5px 20px;
+    margin-left: 77px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.btn-md:hover,
+.btn-md:focus{
+    
+    background-color: rgb(197, 20, 88);
+    border-color: rgb(197, 20, 88);
+    box-shadow: none;
+    outline: none;
+}
+
